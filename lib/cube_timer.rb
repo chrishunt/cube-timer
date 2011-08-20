@@ -30,6 +30,7 @@ class CubeTimer
   end
 
   def print_stats
+    puts "Recent: #{(@times.last*100).round.to_f / 100} seconds" if @times.last
     puts "Average: #{(@average*100).round.to_f / 100} seconds"
   end
 
