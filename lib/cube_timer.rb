@@ -30,8 +30,12 @@ class CubeTimer
   end
 
   def print_stats
-    puts "Recent: #{(@times.last*100).round.to_f / 100} seconds" if @times.last
-    puts "Average: #{(@average*100).round.to_f / 100} seconds"
+    puts "Recent: #{round_time @times.last} seconds" if @times.last
+    puts "Average: #{round_time @average} seconds"
+  end
+
+  def round_time(time)
+    (time*100).round.to_f / 100
   end
 
   def print_scramble
