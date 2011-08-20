@@ -1,0 +1,10 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    puzzled (0.9.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  puzzled
