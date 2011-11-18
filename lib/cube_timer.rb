@@ -15,7 +15,7 @@ class CubeTimer
     end
   end
 
-  private 
+  private
 
   def new_round
     print_line
@@ -26,7 +26,7 @@ class CubeTimer
   end
 
   def print_line
-    puts "\n-----------------------------------------\n\n"
+    puts "\n#{'-' * 50}\n\n"
   end
 
   def print_stats
@@ -46,13 +46,13 @@ class CubeTimer
   end
 
   def time_solve
-    print "\npress <enter> to START timer..."
+    print "\npress <enter> to START timer "
     gets
     start_time = Time.now
     print "press <enter> to STOP timer..."
     gets
     stop_time = Time.now
-    solve_time = stop_time - start_time
+    stop_time - start_time
   end
 
   def save_time(time)
