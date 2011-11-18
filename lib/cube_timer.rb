@@ -60,10 +60,6 @@ class CubeTimer
   end
 
   def update_average
-    sum = 0
-    @times.each do |time|
-      sum = sum + time
-    end
-    @average = sum / @times.size
+    @average = @times.inject(0) { |sum, time| sum += time } / @times.size
   end
 end
